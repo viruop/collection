@@ -4,6 +4,7 @@ import { useFeatureStore } from "@/providers/features-store";
 
 type FeatureCardProps = {
   gradient: string;
+  key: string;
   // children: React.ReactNode;
 } & CardProps;
 
@@ -11,7 +12,7 @@ type CardProps = {
   id: string;
 };
 
-export const FeatureCard = ({ gradient, id }: FeatureCardProps) => {
+export const FeatureCard = ({ gradient, id, key }: FeatureCardProps) => {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
   // getting inViewFeature from store
   // const setFullscreenFeature = useFeatureStore(
@@ -20,6 +21,7 @@ export const FeatureCard = ({ gradient, id }: FeatureCardProps) => {
 
   return (
     <div
+      key={key}
       className={cn(
         "absolute inset-0 h-full w-full rounded-2xl transition-opacity",
         inViewFeature === id

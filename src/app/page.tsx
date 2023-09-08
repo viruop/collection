@@ -78,7 +78,11 @@ export default function Home() {
         <div className="sticky top-0 flex h-screen w-full items-center">
           <div className="relative aspect-square w-full rounded-2xl bg-gray-100">
             {features.map((feature) => (
-              <FeatureCard gradient={feature.gradiant} id={feature.id} />
+              <FeatureCard
+                key={feature.id}
+                gradient={feature.gradiant}
+                id={feature.id}
+              />
             ))}
           </div>
         </div>
