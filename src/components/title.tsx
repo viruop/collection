@@ -48,4 +48,5 @@ const FeatureTitle = React.forwardRef<HTMLParagraphElement, FeatureTitleProps>(
     );
   }
 );
+FeatureTitle.displayName = "FeatureTitle";
 export { FeatureTitle };

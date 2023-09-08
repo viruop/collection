@@ -4,14 +4,14 @@ import { useFeatureStore } from "@/providers/features-store";
 
 type FeatureCardProps = {
   gradient: string;
-  children: React.ReactNode;
+  // children: React.ReactNode;
 } & CardProps;
 
 type CardProps = {
   id: string;
 };
 
-export const FeatureCard = ({ gradient, children, id }: FeatureCardProps) => {
+export const FeatureCard = ({ gradient, id }: FeatureCardProps) => {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
   // getting inViewFeature from store
   // const setFullscreenFeature = useFeatureStore(
@@ -33,7 +33,7 @@ export const FeatureCard = ({ gradient, children, id }: FeatureCardProps) => {
           gradient
         )}
       />
-      {children}
+      <span />
     </div>
   );
 };

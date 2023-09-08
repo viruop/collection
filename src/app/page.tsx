@@ -68,7 +68,9 @@ export default function Home() {
           <ul>
             {features.map((feature) => (
               <li key={feature.id}>
-                <FeatureTitle id={feature.id}>{feature.title}</FeatureTitle>
+                <FeatureTitle key={feature.id} id={feature.id}>
+                  {feature.title}
+                </FeatureTitle>
               </li>
             ))}
           </ul>
@@ -76,11 +78,7 @@ export default function Home() {
         <div className="sticky top-0 flex h-screen w-full items-center">
           <div className="relative aspect-square w-full rounded-2xl bg-gray-100">
             {features.map((feature) => (
-              <FeatureCard
-                gradient={feature.gradiant}
-                children={<span />}
-                id={feature.id}
-              />
+              <FeatureCard gradient={feature.gradiant} id={feature.id} />
             ))}
           </div>
         </div>
