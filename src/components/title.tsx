@@ -19,12 +19,14 @@ export interface FeatureTitleProps
 const FeatureTitle = React.forwardRef<HTMLParagraphElement, FeatureTitleProps>(
   ({ children, id, ...props }, ref) => {
     ref = useRef<HTMLParagraphElement>(null);
-    const documentRef = useRef(document);
-
+    const documentRef = useRef<Document | null>(null);
+    useEffect(() => {
+      if (typeof document !== "undefined") {
+        documentRef.current = document;
+      }
+    }, []);
     const isInView = useInView(ref, {
       margin: "-50% 0px -50% 0px",
-
-      root: documentRef,
     });
     const setInViewFeature = useFeatureStore((state) => state.setInViewFeature);
     const inViewFeature = useFeatureStore((state) => state.inViewFeature);
