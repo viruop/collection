@@ -14,10 +14,6 @@ type CardProps = {
 
 export const FeatureCard = ({ gradient, id, key }: FeatureCardProps) => {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
-  // getting inViewFeature from store
-  // const setFullscreenFeature = useFeatureStore(
-  //   (state) => state.setFullscreenFeature
-  // );
 
   return (
     <div

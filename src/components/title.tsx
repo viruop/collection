@@ -5,11 +5,6 @@ import { useFeatureStore } from "@/providers/features-store";
 import useInView from "@/hooks/index";
 import React, { useEffect, useRef } from "react";
 
-type Props = {
-  children: React.ReactNode;
-  id: string;
-};
-
 export interface FeatureTitleProps
   extends React.InputHTMLAttributes<HTMLParagraphElement> {
   children: React.ReactNode;
@@ -35,7 +30,7 @@ const FeatureTitle = React.forwardRef<HTMLParagraphElement, FeatureTitleProps>(
       if (isInView) setInViewFeature(id);
       if (!isInView && inViewFeature === id) setInViewFeature(null);
     }, [isInView, id, setInViewFeature, inViewFeature]);
-    console.log(inViewFeature);
+
     return (
       <p
         ref={ref}

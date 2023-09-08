@@ -8,43 +8,31 @@ export default function Home() {
       title: "Use your calendar as a todo list",
       id: "todo-list",
       gradiant: "from-[#f7f0ff] to-[#a78afe]",
-      // card: Todo,
-      // visual: OtherVisual,
     },
     {
       title: "Color your calendar to organize",
       id: "colors",
       gradiant: "from-[#f5fbff] to-[#addeff]",
-      // card: Colors,
-      // visual: OtherVisual,
     },
     {
       title: "Instantly know if someone is available",
       id: "availability",
       gradiant: "from-[#f5fff7] to-[#adf8ff]",
-      // card: Availability,
-      // visual: OtherVisual,
     },
     {
       title: "Track what you listened to when",
       id: "music",
       gradiant: "from-[#f7fff5] to-[#adffd8]",
-      // card: Music,
-      // visual: MusicVisual,
     },
     {
       title: "Send scheduling links guests love",
       id: "scheduling-links",
       gradiant: "from-[#fff7f5] to-[#ffd8ad]",
-      // card: SchedulingLinks,
-      // visual: OtherVisual,
     },
     {
       title: "Always know what your team is up to",
       id: "team",
       gradiant: "from-[#fef5ff] to-[#ffade1]",
-      // card: Team,
-      // visual: OtherVisual,
     },
   ];
   return (
@@ -62,7 +50,6 @@ export default function Home() {
           Fake video
         </div>
       </section>
-
       <div className="flex w-full items-start gap-20">
         <div className="w-full py-[50vh]">
           <ul>
