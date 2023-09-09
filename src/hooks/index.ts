@@ -6,7 +6,7 @@ interface RefObject<T> {
 interface InViewOptions {
   root?: Element | Document;
   margin?: string;
-  amount?: "some" | "all" | number;
+  amount?: "some" | "all";
 }
 interface RefObject<T> {
   readonly current: T | null;
@@ -14,7 +14,7 @@ interface RefObject<T> {
 interface Options extends Omit<InViewOptions, "root" | "amount"> {
   root?: RefObject<Element> | MutableRefObject<Document>;
   once?: boolean;
-  amount?: "some" | "all" | number;
+  amount?: "some" | "all";
 }
 type ElementOrSelector = Element | Element[] | NodeListOf<Element> | string;
 type ViewChangeHandler = (entry: IntersectionObserverEntry) => void;
@@ -31,7 +31,7 @@ function inView(
 ): VoidFunction {
   const elements = resolveElements(elementOrSelector);
   const activeIntersections = new WeakMap();
-  const onIntersectionChange = (entries: any[]) => {
+  const onIntersectionChange = (entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry: IntersectionObserverEntry) => {
       const onEnd = activeIntersections.get(entry.target);
       /**
@@ -55,7 +55,7 @@ function inView(
   const observer = new IntersectionObserver(onIntersectionChange, {
     root,
     rootMargin,
-    threshold: 0,
+    threshold: amount ? thresholds[amount] : 0,
   });
   elements.forEach((element: Element) => observer.observe(element));
   return () => observer.disconnect();
