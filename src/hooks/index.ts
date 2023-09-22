@@ -78,7 +78,7 @@ export default function useInView(
       amount,
     };
     return inView(ref.current, onEnter, options);
-  }, [root, ref, margin, once]);
+  }, [root, ref, margin, once, amount, isInView]);
   return isInView;
 }
 
