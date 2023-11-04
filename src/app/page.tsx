@@ -37,7 +37,7 @@ export default function Home() {
   ];
   return (
     <div className="mx-auto  px-4">
-      <section className="flex flex-col justify-center py-20 max-w-6xl mx-auto  ">
+      <section className="flex flex-col justify-center py-20 max-w-6xl mx-auto">
         <h1 className="mb-12 font-heading text-7xl">
           The joyful productivity app.
           <br />
@@ -74,6 +74,856 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="mb-40 md:mt-24">
+        <h2 className="font-book font-styling font-display relative z-20 text-center text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+          The team behind it
+        </h2>
+        <p className="sans mb-12 text-center tracking-wide text-base md:text-[1.125rem] md:leading-[1.5] text-slate-11 font-normal">
+          A fully remote team on a mission to build
+          <br />
+          the best communication platform for developers.
+        </p>
+        <Image
+          alt="Resend"
+          loading="lazy"
+          width={800}
+          height={800}
+          className="mx-auto -mt-5 mb-8 -rotate-1 rounded-lg"
+          src="https://resend.com/_next/image?url=%2Fstatic%2Fabout%2Fteam.jpeg&w=828&q=75"
+        />
+
+        <p className="sans mt-4 text-center text-sm leading-[1.6] text-slate-11 font-normal">
+          <a
+            className="flex items-center justify-center gap-1 text-xs text-slate-11 transition duration-200 ease-in-out hover:text-slate-12"
+            target="_blank"
+            href="https://twitter.com/zenorocha/status/1648686304635265025"
+          >
+            <svg
+              className="hidden md:block"
+              fill="none"
+              height={16}
+              viewBox="0 0 24 24"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 5.89444C21.2645 6.21524 20.4744 6.43199 19.6438 6.52997C20.4911 6.03056 21.1412 5.23811 21.4477 4.29479C20.655 4.75778 19.7768 5.09418 18.8422 5.27452C18.0935 4.49073 17.0277 4 15.8474 4C13.582 4 11.7446 5.80861 11.7446 8.04032C11.7446 8.35591 11.7816 8.66284 11.8503 8.95936C8.43883 8.79029 5.41672 7.18197 3.39258 4.7387C3.04025 5.33695 2.83766 6.03056 2.83766 6.76926C2.83766 8.17037 3.56258 9.40761 4.66273 10.1316C3.98978 10.1099 3.35735 9.92869 2.80419 9.6261V9.67812C2.80419 11.635 4.21792 13.2676 6.09583 13.6387C5.75055 13.7306 5.38853 13.7791 5.01506 13.7791C4.75081 13.7791 4.49273 13.7549 4.24258 13.708C4.76491 15.312 6.27993 16.4808 8.07593 16.512C6.67101 17.5958 4.90144 18.2417 2.97948 18.2417C2.64829 18.2417 2.3215 18.2226 2 18.1853C3.81626 19.3324 5.97252 20 8.28909 20C15.8378 20 19.9644 13.8459 19.9644 8.50851C19.9644 8.3351 19.96 8.15997 19.9521 7.98656C20.7536 7.41606 21.4495 6.70597 21.9982 5.89704L22 5.89444Z"
+                fill="currentColor"
+              />
+            </svg>
+            Some of our team meeting for the first time in-person during a trip
+            to Portugal
+          </a>
+        </p>
+      </div>
+
+      <div className="mb-40 mt-24">
+        <h2 className="font-book font-styling font-display mx-auto text-center text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+          <span
+            data-br=":r13:"
+            data-brr={1}
+            style={{
+              display: "inline-block",
+              verticalAlign: "top",
+              textDecoration: "inherit",
+            }}
+          >
+            What we believe
+          </span>
+        </h2>
+        <p className="sans mb-12 text-center tracking-wide text-base md:text-[1.125rem] md:leading-[1.5] text-slate-11 font-normal">
+          Principles that dictate how we think, behave, and make decisions.
+        </p>
+        <div style={{ transform: "translateY(32.3733px) translateZ(0px)" }}>
+          <div
+            className="relative mx-auto rounded-2xl text-white"
+            style={{
+              maxWidth: 704,
+              background:
+                "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 25%, rgba(255, 255, 255, 0.15)) border-box border-box",
+              border: "2px solid transparent",
+            }}
+          >
+            <div
+              className="absolute left-1/2 top-0 z-0 h-[500px] w-[90%] -translate-x-1/2"
+              style={{
+                background:
+                  "radial-gradient(67.62% 100% at 50% 0%, rgba(16, 122, 219, 0.08) 0%, rgba(16, 170, 219, 0) 72.72%, rgba(16, 36, 219, 0) 100%), rgb(0, 0, 0)",
+              }}
+            />
+            <div className="z-1 relative flex items-center justify-between border-b border-white border-opacity-5 p-4">
+              <div className="flex gap-2">
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  fill="none"
+                  height={24}
+                  viewBox="0 0 24 24"
+                  width={24}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height={13}
+                    rx="1.5"
+                    stroke="white"
+                    strokeOpacity="0.4"
+                    width={15}
+                    x="4.5"
+                    y="5.5"
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={14}
+                    x={5}
+                    y={9}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={8}
+                    y={3}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={15}
+                    y={3}
+                  />
+                </svg>
+                <div className="text-right text-xs font-normal leading-normal tracking-tight text-white text-opacity-50">
+                  Dec 6th, 2022
+                </div>
+              </div>
+            </div>
+            <div className="z-1 relative flex-col p-5 md:p-14">
+              <div
+                className="-ml-3 mb-7  inline-flex items-center justify-start gap-2 rounded-full py-1 pl-2 pr-4"
+                style={{
+                  background:
+                    "linear-gradient(rgb(6, 6, 6), rgb(6, 6, 6)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 40%, rgba(255, 255, 255, 0.2)) border-box border-box",
+                  border: "1px solid transparent",
+                }}
+              >
+                <span
+                  className="relative block flex-shrink-0 overflow-hidden rounded-full h-7 w-7"
+                  style={{
+                    background:
+                      "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(42deg, rgb(0, 0, 0) 45%, rgba(255, 255, 255, 0.6)) border-box border-box",
+                    border: "1px solid transparent",
+                  }}
+                >
+                  <img
+                    alt="Photo of Zeno Rocha"
+                    loading="lazy"
+                    width={40}
+                    height={40}
+                    decoding="async"
+                    data-nimg={1}
+                    srcSet="/_next/image?url=%2Fstatic%2Fposts%2Favatar-zeno.jpg&w=48&q=75 1x, /_next/image?url=%2Fstatic%2Fposts%2Favatar-zeno.jpg&w=96&q=75 2x"
+                    src="/_next/image?url=%2Fstatic%2Fposts%2Favatar-zeno.jpg&w=96&q=75"
+                    style={{ color: "transparent" }}
+                  />
+                </span>
+                <p className="sans !font-display text-sm leading-[1.6] text-slate-12 font-normal">
+                  Zeno Rocha
+                </p>
+                <p className="sans text-sm leading-[1.6] text-slate-11 font-normal">
+                  &lt;zeno@resend.com&gt;
+                </p>
+              </div>
+              <h2 className="font-book font-styling font-display mb-2 mt-1 text-[1.48rem] text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+                Do work that inspire others
+              </h2>
+              <div>
+                <p className="sans !text-[1rem] leading-[1.8] opacity-75 text-sm leading-[1.6] text-slate-11 font-normal">
+                  You can't inspire people by doing an “okay” job. To inspire,
+                  you need to do{" "}
+                  <strong className="font-normal text-slate-12">
+                    phenomenal work
+                  </strong>
+                  . Quality is not a plus; it's a{" "}
+                  <strong className="font-normal text-slate-12">
+                    must-have
+                  </strong>
+                  . We know nothing will ever be perfect, but that doesn't stop
+                  us from pushing the limits. We don't want to just meet the bar
+                  of our peers. We want to{" "}
+                  <strong className="font-normal text-slate-12">
+                    raise the bar
+                  </strong>
+                  . The sum of all the{" "}
+                  <strong className="font-normal text-slate-12">
+                    small details
+                  </strong>{" "}
+                  is what makes something special.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{ transform: "translateY(48.56px) translateZ(0px)" }}>
+          <div
+            className="relative mx-auto rounded-2xl md:rotate-2 lg:rotate-2 lg:-translate-x-[20%] lg:-translate-y-[5%]"
+            style={{
+              maxWidth: 704,
+              background:
+                "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 25%, rgba(255, 255, 255, 0.15)) border-box border-box",
+              border: "2px solid transparent",
+            }}
+          >
+            <div
+              className="absolute left-1/2 top-0 z-0 h-[500px] w-[90%] -translate-x-1/2"
+              style={{
+                background:
+                  "radial-gradient(67.62% 100% at 50% 0%, rgba(150, 40, 150, 0.08) 0%, rgba(16, 170, 219, 0) 72.72%, rgba(16, 36, 219, 0) 100%), rgb(0, 0, 0)",
+              }}
+            />
+            <div className="z-1 relative flex items-center justify-between border-b border-white border-opacity-5 p-4">
+              <div className="flex gap-2">
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  fill="none"
+                  height={24}
+                  viewBox="0 0 24 24"
+                  width={24}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height={13}
+                    rx="1.5"
+                    stroke="white"
+                    strokeOpacity="0.4"
+                    width={15}
+                    x="4.5"
+                    y="5.5"
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={14}
+                    x={5}
+                    y={9}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={8}
+                    y={3}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={15}
+                    y={3}
+                  />
+                </svg>
+                <div className="text-right text-xs font-normal leading-normal tracking-tight text-white text-opacity-50">
+                  Jan 2nd, 2023
+                </div>
+              </div>
+            </div>
+            <div className="z-1 relative flex-col p-5 md:p-14">
+              <div
+                className="-ml-3 mb-7 inline-flex items-center justify-start gap-2 rounded-full py-1 pl-2 pr-4"
+                style={{
+                  background:
+                    "linear-gradient(rgb(6, 6, 6), rgb(6, 6, 6)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 40%, rgba(255, 255, 255, 0.2)) border-box border-box",
+                  border: "1px solid transparent",
+                }}
+              >
+                <span
+                  className="relative block flex-shrink-0 overflow-hidden rounded-full h-7 w-7"
+                  style={{
+                    background:
+                      "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(42deg, rgb(0, 0, 0) 45%, rgba(255, 255, 255, 0.6)) border-box border-box",
+                    border: "1px solid transparent",
+                  }}
+                >
+                  <img
+                    alt="Photo of Jonni Lundy"
+                    loading="lazy"
+                    width={40}
+                    height={40}
+                    decoding="async"
+                    data-nimg={1}
+                    srcSet="/_next/image?url=%2Fstatic%2Fposts%2Favatar-jonni.jpg&w=48&q=75 1x, /_next/image?url=%2Fstatic%2Fposts%2Favatar-jonni.jpg&w=96&q=75 2x"
+                    src="/_next/image?url=%2Fstatic%2Fposts%2Favatar-jonni.jpg&w=96&q=75"
+                    style={{ color: "transparent" }}
+                  />
+                </span>
+                <p className="sans !font-display text-sm leading-[1.6] text-slate-12 font-normal">
+                  Jonni Lundy
+                </p>
+                <p className="sans text-sm leading-[1.6] text-slate-11 font-normal">
+                  &lt;jonni@resend.com&gt;
+                </p>
+              </div>
+              <h2 className="font-book font-styling font-display mb-2 mt-1 text-[1.48rem] text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+                No ego
+              </h2>
+              <div>
+                <p className="sans !text-[1rem] leading-[1.8] opacity-75 text-sm leading-[1.6] text-slate-11 font-normal">
+                  Helping others is part of the job. It's okay to admit you
+                  don't know something and{" "}
+                  <strong className="font-normal text-slate-12">
+                    ask for help
+                  </strong>{" "}
+                  - it's a sign of strength, not weakness. We work together as
+                  an async team and{" "}
+                  <strong className="font-normal text-slate-12">
+                    assume positive intent
+                  </strong>
+                  . We communicate in a kind, direct, and{" "}
+                  <strong className="font-normal text-slate-12">
+                    transparent way
+                  </strong>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{ transform: "translateY(8.09333px) translateZ(0px)" }}>
+          <div
+            className="relative mx-auto rounded-2xl md:-rotate-1 lg:-rotate-2 lg:translate-x-[20%] lg:-translate-y-[5%]"
+            style={{
+              maxWidth: 704,
+              background:
+                "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 25%, rgba(255, 255, 255, 0.15)) border-box border-box",
+              border: "2px solid transparent",
+            }}
+          >
+            <div
+              className="absolute left-1/2 top-0 z-0 h-[500px] w-[90%] -translate-x-1/2"
+              style={{
+                background:
+                  "radial-gradient(67.62% 100% at 50% 0%, rgba(16, 199, 200, 0.08) 0%, rgba(16, 170, 219, 0) 72.72%, rgba(16, 36, 219, 0) 100%), rgb(0, 0, 0)",
+              }}
+            />
+            <div className="z-1 relative flex items-center justify-between border-b border-white border-opacity-5 p-4">
+              <div className="flex gap-2">
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  fill="none"
+                  height={24}
+                  viewBox="0 0 24 24"
+                  width={24}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height={13}
+                    rx="1.5"
+                    stroke="white"
+                    strokeOpacity="0.4"
+                    width={15}
+                    x="4.5"
+                    y="5.5"
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={14}
+                    x={5}
+                    y={9}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={8}
+                    y={3}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={15}
+                    y={3}
+                  />
+                </svg>
+                <div className="text-right text-xs font-normal leading-normal tracking-tight text-white text-opacity-50">
+                  Dec 6th, 2022
+                </div>
+              </div>
+            </div>
+            <div className="z-1 relative flex-col p-5 md:p-14">
+              <div
+                className="-ml-3 mb-7 inline-flex items-center justify-start gap-2 rounded-full py-1 pl-2 pr-4"
+                style={{
+                  background:
+                    "linear-gradient(rgb(6, 6, 6), rgb(6, 6, 6)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 40%, rgba(255, 255, 255, 0.2)) border-box border-box",
+                  border: "1px solid transparent",
+                }}
+              >
+                <span
+                  className="relative block flex-shrink-0 overflow-hidden rounded-full h-7 w-7"
+                  style={{
+                    background:
+                      "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(42deg, rgb(0, 0, 0) 45%, rgba(255, 255, 255, 0.6)) border-box border-box",
+                    border: "1px solid transparent",
+                  }}
+                >
+                  <img
+                    alt="Photo of Bu Kinoshita"
+                    loading="lazy"
+                    width={40}
+                    height={40}
+                    decoding="async"
+                    data-nimg={1}
+                    srcSet="/_next/image?url=%2Fstatic%2Fposts%2Favatar-bu.jpg&w=48&q=75 1x, /_next/image?url=%2Fstatic%2Fposts%2Favatar-bu.jpg&w=96&q=75 2x"
+                    src="/_next/image?url=%2Fstatic%2Fposts%2Favatar-bu.jpg&w=96&q=75"
+                    style={{ color: "transparent" }}
+                  />
+                </span>
+                <p className="sans !font-display text-sm leading-[1.6] text-slate-12 font-normal">
+                  Bu Kinoshita
+                </p>
+                <p className="sans text-sm leading-[1.6] text-slate-11 font-normal">
+                  &lt;bu@resend.com&gt;
+                </p>
+              </div>
+              <h2 className="font-book font-styling font-display mb-2 mt-1 text-[1.48rem] text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+                Keep shipping
+              </h2>
+              <div>
+                <p className="sans !text-[1rem] leading-[1.8] opacity-75 text-sm leading-[1.6] text-slate-11 font-normal">
+                  Speed is key. We prioritize ruthlessly, have a strong{" "}
+                  <strong className="font-normal text-slate-12">
+                    sense of urgency
+                  </strong>
+                  , and{" "}
+                  <strong className="font-normal text-slate-12">
+                    make decisions fast
+                  </strong>
+                  . We constantly review the scope of a project and work toward
+                  a v0, not a v1. We{" "}
+                  <strong className="font-normal text-slate-12">
+                    ship early
+                  </strong>
+                  , and we{" "}
+                  <strong className="font-normal text-slate-12">
+                    ship often
+                  </strong>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{ transform: "translateY(8.09333px) translateZ(0px)" }}>
+          <div
+            className="relative mx-auto rounded-2xl text-white"
+            style={{
+              maxWidth: 704,
+              background:
+                "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 25%, rgba(255, 255, 255, 0.15)) border-box border-box",
+              border: "2px solid transparent",
+            }}
+          >
+            <div
+              className="absolute left-1/2 top-0 z-0 h-[500px] w-[90%] -translate-x-1/2"
+              style={{
+                background:
+                  "radial-gradient(67.62% 100% at 50% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(16, 170, 219, 0) 72.72%, rgba(16, 36, 219, 0) 100%), rgb(0, 0, 0)",
+              }}
+            />
+            <div className="z-1 relative flex items-center justify-between border-b border-white border-opacity-5 p-4">
+              <div className="flex gap-2">
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+                <div className="h-2.5 w-2.5 rounded-full border border-white border-opacity-30" />
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  fill="none"
+                  height={24}
+                  viewBox="0 0 24 24"
+                  width={24}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height={13}
+                    rx="1.5"
+                    stroke="white"
+                    strokeOpacity="0.4"
+                    width={15}
+                    x="4.5"
+                    y="5.5"
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={14}
+                    x={5}
+                    y={9}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={7}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={10}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={13}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={12}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={1}
+                    width={1}
+                    x={16}
+                    y={15}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={8}
+                    y={3}
+                  />
+                  <rect
+                    fill="white"
+                    fillOpacity="0.4"
+                    height={2}
+                    width={1}
+                    x={15}
+                    y={3}
+                  />
+                </svg>
+                <div className="text-right text-xs font-normal leading-normal tracking-tight text-white text-opacity-50">
+                  May 15th, 2023
+                </div>
+              </div>
+            </div>
+            <div className="z-1 relative flex-col p-5 md:p-14">
+              <div
+                className="-ml-3 mb-7 inline-flex items-center justify-start gap-2 rounded-full py-1 pl-2 pr-4"
+                style={{
+                  background:
+                    "linear-gradient(rgb(6, 6, 6), rgb(6, 6, 6)) padding-box padding-box, linear-gradient(0deg, rgb(0, 0, 0) 40%, rgba(255, 255, 255, 0.2)) border-box border-box",
+                  border: "1px solid transparent",
+                }}
+              >
+                <span
+                  className="relative block flex-shrink-0 overflow-hidden rounded-full h-7 w-7"
+                  style={{
+                    background:
+                      "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box padding-box, linear-gradient(42deg, rgb(0, 0, 0) 45%, rgba(255, 255, 255, 0.6)) border-box border-box",
+                    border: "1px solid transparent",
+                  }}
+                >
+                  <img
+                    alt="Photo of Zeh Fernandes"
+                    loading="lazy"
+                    width={40}
+                    height={40}
+                    decoding="async"
+                    data-nimg={1}
+                    srcSet="/_next/image?url=%2Fstatic%2Fposts%2Favatar-zeh.jpg&w=48&q=75 1x, /_next/image?url=%2Fstatic%2Fposts%2Favatar-zeh.jpg&w=96&q=75 2x"
+                    src="/_next/image?url=%2Fstatic%2Fposts%2Favatar-zeh.jpg&w=96&q=75"
+                    style={{ color: "transparent" }}
+                  />
+                </span>
+                <p className="sans !font-display text-sm leading-[1.6] text-slate-12 font-normal">
+                  Zeh Fernandes
+                </p>
+                <p className="sans text-sm leading-[1.6] text-slate-11 font-normal">
+                  &lt;zeh@resend.com&gt;
+                </p>
+              </div>
+              <h2 className="font-book font-styling font-display mb-2 mt-1 text-[1.48rem] text-[2.25rem] tracking-tight leading-[130%] text-slate-12">
+                Default to action
+              </h2>
+              <div>
+                <p className="sans !text-[1rem] leading-[1.8] opacity-75 text-sm leading-[1.6] text-slate-11 font-normal">
+                  Regardless of what you do, we are all makers, and{" "}
+                  <strong className="font-normal text-slate-12">
+                    makers don't wait
+                  </strong>
+                  . When we see a problem, we don't expect someone to fix it or
+                  tell us what to do. Instead,{" "}
+                  <strong className="font-normal text-slate-12">
+                    we take initiative
+                  </strong>
+                  , find creative ways around it, and send a pull request to
+                  solve it. Remember -{" "}
+                  <strong className="font-normal text-slate-12">
+                    no problem is too small
+                  </strong>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section className="container mx-auto p-10 md:p-20 transform duration-500">
         <article className="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-xl ">
           <img
